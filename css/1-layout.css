@@ -1,0 +1,164 @@
+/* changed: 22.01.31 */
+
+@font face {
+    font-family: SourceCodePro;
+	src: local('SourceCodePro'), local('SourceCodePro'),
+		 url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+}
+body {
+	background: var(--pribg);
+	color: var(--prifg);
+	font-family: monospace;
+	/* font-family: "Consolas"; */
+	/* font-family: "Liberation Mono"; */
+	/* font-family: "Lucida Console"; */
+	font-size: 14px;
+	line-height: 1.3em;
+	padding: 0;
+	margin: 0;
+
+	--page-link-found   : var(--green);
+	--page-link-notfound: var(--red);
+
+	--content-headlines : var(--cyan);
+	--content-font-size : 1.1rem;
+	--content-line-height : 1.5rem;
+
+	--border-color      : var(--grey3);
+	--border-radius     : 2;
+	
+	--button-background : var(--debug);
+	--button-text       : var(--debug);
+	--button-border     : 1px solid var(--debug);
+	--button-radius     : 0;
+	--button-text-size  : inherit;
+	--button-padding    : 0;
+	--button-margin     : 0;
+}
+a:link    { color: var(--page-link-found); text-decoration: none; }
+a:visited { color: var(--page-link-found); text-decoration: none; }
+a:hover   { color: var(--page-link-found); text-decoration: underline; }
+
+.body-wrapper {
+	
+}
+/***** header *****************************************************************/
+.page-header {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	.header-content {
+		flex: 2;
+		border-bottom: 3px solid var(--green);
+		text-align: right;
+	}
+		.header-title {
+			font-size: 2em;
+			line-height: 0.8em;
+			padding: 5px 25px 2px 25px;
+		}
+		.header-tagline {
+			padding: 0 20px 5px 0;
+		}
+	.header-search {
+		flex: 3;
+		text-align: right;
+		padding: 0 10px 0 0;
+	}
+		.header-search #dw__search {
+			display: inline-block;
+			width: 290px;
+		}
+		.header-search .no {
+			display: flex;
+			justify-content: flex-end;
+			padding: 2px;
+		}
+		.header-search #qsearch__in {
+			width: 80px;
+			color: var(--prifg);
+			background: transparent;
+			border: 1px solid var(--border-color);
+			border-radius: var(--border-radius);
+			padding: 7px 8px;
+			margin: 0;
+			transition: all 500ms ease-in-out;
+		}
+		.header-search #qsearch__in:focus { width: 290px; background: var(--secbg); }
+		.header-search #dw__search button {
+			text-indent: -999px;
+			overflow: hidden;
+			width: 40px;
+			padding: 0;
+			margin: 0 0 0 -40px;
+			border: 1px solid transparent;
+			border-radius: inherit;
+			background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath fill='%23f1f2f8' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+			cursor: pointer;
+			opacity: 0.7;
+		}
+
+.page-main {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.mid-content {
+	flex: 1 1 800px;
+	min-width: 600px;
+	min-height: 80vh;
+}
+.lspacer { flex: 1; text-align: left; }
+.rspacer { flex: 1; text-align: right; }
+											.lspacer:hover { background: coral; }
+											.rspacer:hover { background: coral; }
+
+
+/***** navigation *************************************************************/
+.main-navigation { margin: 0 0 10px 0; }
+	.main-youarehere { font-size: inherit; }
+	.main-breadcrumb { font-size: inherit; }
+
+/***** system messages ********************************************************/
+.main-messages {
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+	.main-messages > div		{ padding: 10px 10px 10px 32px; }
+	.main-messages > .error		{ background-color: var(--red); color: var(--pribg); }
+	.main-messages > .info		{ background-color: var(--blue); color: var(--pribg); }
+	.main-messages > .success	{ background-color: var(--green); color: var(--pribg); }
+	.main-messages > .notify	{ background-color: var(--yellow); color: var(--pribg); }
+
+
+													.sidebar-left {
+														flex: 0;
+														width: 5px;
+													}
+														.sidebar-left:hover { flex: 1 1 350px; }
+													.sidebar-right {
+														flex: 0;
+														width: 5px;
+														background: coral;
+													}
+														.sidebar-right:hover { flex: 1 1 50px; }
+
+
+.page-footer {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+}
+	.footer-spacer {
+		flex: 3;
+	}
+	.footer-content {
+		flex: 2;
+		border-top: 3px solid var(--green);
+		padding: 5px 10px;
+	}

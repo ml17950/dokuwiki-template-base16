@@ -1,0 +1,135 @@
+/* changed: 22.01.29 */
+
+/***** content syntax styles **************************************************/
+
+/* headlines */
+.main-content h1 {
+	color: var(--content-headlines);
+	font-size: 2em;
+	text-align: left;
+	line-height: 1.8em;
+	letter-spacing: .1em;
+	margin: 0 0 1.25em 0px;
+	border-bottom: 3px double var(--content-headlines);
+}
+.main-content h1:first-of-type {
+	font-size: 3em;
+	font-weight: 600;
+	margin: 0 0 0.7em 0;
+	word-break: break-word;
+	border-bottom: none;
+}
+.main-content h2 {
+	color: var(--content-headlines);
+	font-size: 1.5em;
+	text-align: left;
+	line-height: 1.8em;
+	letter-spacing: .1em;
+	margin: 1.2em 0 1em 0;
+	border-bottom: 1px dotted var(--content-headlines);
+}
+.main-content h3 {
+	color: var(--content-headlines);
+	font-size: 1.1em;
+	text-align: left;
+	line-height: 1.8em;
+	letter-spacing: .1em;
+	margin: 1.4em 0 1em 0;
+	border-bottom: 1px dashed var(--content-headlines);
+}
+.main-content h4, .main-content h5, .main-content h6 {
+	color: var(--content-headlines);
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 1em;
+	text-align: left;
+	font-weight: bold;	
+	line-height: 1.8em;
+	letter-spacing: .1em;
+	margin: 2em 0 0 0;
+}
+/* text-level */
+.main-content > .level1 { margin-left: 1em; }
+.main-content > .level2 { margin-left: 1em; }
+.main-content > .level3 { margin-left: 1em; }
+.main-content > .level4 { margin-left: 1em; }
+.main-content > .level5 { margin-left: 1em; }
+
+/* text */
+.main-content p { font-size: var(--content-font-size); line-height: var(--content-line-height); }
+.main-content strong	{ font-weight: bold; }
+.main-content em		{ font-style: italic; }
+.main-content .u		{ font-style: normal; text-decoration: underline; }
+/* code */
+.main-content code { font-family: "Courier New", Courier, monospace; background-color: var(--pink); color: var(--prifg); padding: 2px 5px 1px 5px; }
+.main-content pre {
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Nimbus Mono L", Monaco, "Courier New", monospace;
+	font-size: 1em;
+	direction: ltr;
+	text-align: left;
+	background: var(--secbg);
+	color: var(--prifg);
+	box-shadow: none;
+	border-radius: var(--border-radius);
+	overflow: auto;
+	word-wrap: normal;
+	border: 1px solid #ccc;
+	padding: .7em 1em;
+	margin: 4px 0;
+}
+.main-content .code {
+	/*font-family: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Nimbus Mono L", Monaco, "Courier New", monospace;
+	font-size: 89%;
+	direction: ltr;
+	text-align: left;
+	background-color: #f0d2d2;
+	color: #b10000;
+	box-shadow: none;
+	border-radius: 2px;
+	padding: 1.5px 4px 1.5px 4px;
+	*/
+}
+/* links */
+.main-content a { color: var(--page-link-found); text-decoration: none; }
+.main-content a:hover { text-decoration: underline; } 
+.main-content .urlextern {}
+/* .main-content .urlextern:after { content: " \1F30D"; } */
+.main-content .mail      {}
+/* .main-content .mail:after { content: " \1F4E7"; } */
+.main-content .windows   {}
+.main-content .windows:after { content: " \1F4C2"; }
+.main-content .interwiki {}
+/* .main-content .interwiki:after { content: " \1F4D1"; } */
+.main-content .mediafile { font-family: "Lucida Console", "Courier New", Courier, monospace; }
+.main-content .wikilink1 { /* existing pages */ }
+.main-content .wikilink2 { color: var(--page-link-notfound); /* nonexisting pages */ }
+/* images (media) */
+.main-content .media       {}
+.main-content .medialeft   { float: left; }
+.main-content .mediacenter { display: block; margin: 0 auto; }
+.main-content .mediaright  { float: right; }
+/* text */
+.main-content sub { font-size: .8em; line-height: 1; vertical-align: sub; }
+.main-content sup { font-size: .8em; line-height: 1; vertical-align: super; }
+.main-content hr { background: cyan; }
+.main-content blockquote { border-left: 5px solid var(--cyan); font-style: italic; padding: 0 0 0 7px; margin: 0 0 0 20px; }
+.main-content blockquote blockquote { margin: 0; }
+/* lists */
+.main-content ul { padding: 0 0 0 25px; margin: 5px; }
+.main-content ol { padding: 0 0 0 25px; margin: 5px; }
+.main-content li { margin: 3px 0; }
+/* tables */
+.main-content table { border: 1px solid var(--border-color); margin: 5px; width: 99%; border-collapse: collapse; }
+.main-content th { border-bottom: 3px double var(--border-color); background: var(--secbg); text-align: left; vertical-align: top; font-size: 0.8em; padding: 0 4px; }
+.main-content td { border-top: 1px solid var(--border-color); vertical-align: top;  padding: 2px 4px; }
+.main-content tr:last-child { border-bottom: 1px solid var(--border-color); }
+/* footnotes */
+.main-content .footnotes { border-top: 1px dotted var(--button-background); padding: .5em 0 0 0; margin: 1em 0 0 0; clear: both; }
+.main-content .content   { display: inline; }
+/* section edit */
+.main-content .secedit { display: none; text-align: right; }
+.main-content .secedit button { background: var(--button-background); color: var(--button-text); border: var(--button-border); border-radius: var(--button-radius); padding: var(--button-padding); margin: var(--button-margin); font-size: var(--button-text-size); cursor: pointer; }
+/* common classes */
+.no { display: inline; margin: 0; padding: 0; }
+.rightalign { text-align: right; }
+.centeralign { text-align: center; }
+.leftalign { text-align: left; }

@@ -1,0 +1,250 @@
+/* changed: 22.01.31 */
+
+:root {
+	--debug: HotPink;
+
+	/* author: arcticicestudio */
+	--pribg:  #2E3440; /* base00 */
+	--secbg:  #3B4252; /* base01 */
+	--grey1:  #434C5E; /* base02 */
+	--grey2:  #4C566A; /* base03 */
+	--grey3:  #D8DEE9; /* base04 */
+	--grey4:  #E5E9F0; /* base05 */
+	--prifg:  #ECEFF4; /* base06 */
+	--secfg:  #8FBCBB; /* base07 */
+	--red:    #BF616A; /* base08 */
+	--orange: #D08770; /* base09 */
+	--yellow: #EBCB8B; /* base0A */
+	--green:  #A3BE8C; /* base0B */
+	--cyan:   #88C0D0; /* base0C */
+	--blue:   #81A1C1; /* base0D */
+	--pink:   #B48EAD; /* base0E */
+	--other:  #5E81AC; /* base0F */
+}
+
+.scheme-monokai {
+	--scheme: Monokai;
+	/* author: arcticicestudio */
+	--pribg:  #ff00ff; /* base00 */
+	--secbg:  #ff00ff; /* base01 */
+	--grey1:  #ff00ff; /* base02 */
+	--grey2:  #ff00ff; /* base03 */
+	--grey3:  #ff00ff; /* base04 */
+	--grey4:  #ff00ff; /* base05 */
+	--prifg:  #ff00ff; /* base06 */
+	--secfg:  #ff00ff; /* base07 */
+	--red:    #ff00ff; /* base08 */
+	--orange: #ff00ff; /* base09 */
+	--yellow: #ff00ff; /* base0A */
+	--green:  #ff00ff; /* base0B */
+	--cyan:   #ff00ff; /* base0C */
+	--blue:   #ff00ff; /* base0D */
+	--pink:   #ff00ff; /* base0E */
+	--other:  #ff00ff; /* base0F */
+}
+.scheme-BrushTreesDark {
+	--scheme: "Brush Trees Dark";
+	/* author: Abraham White  */
+	/* source: https://github.com/whiteabelincoln/base16-brushtrees-scheme  */
+	--pribg   : #485867; /* base00 */
+	--secbg   : #5A6D7A; /* base01 */
+	--grey1   : #6D828E; /* base02 */
+	--grey2   : #8299A1; /* base03 */
+	--grey3   : #98AFB5; /* base04 */
+	--grey4   : #B0C5C8; /* base05 */
+	--prifg   : #C9DBDC; /* base06 */
+	--secfg   : #E3EFEF; /* base07 */
+	--red     : #b38686; /* base08 */
+	--orange  : #d8bba2; /* base09 */
+	--yellow  : #aab386; /* base0A */
+	--green   : #87b386; /* base0B */
+	--cyan    : #86b3b3; /* base0C */
+	--blue    : #868cb3; /* base0D */
+	--pink    : #b386b2; /* base0E */
+	--other   : #b39f9f; /* base0F */
+}
+.scheme-Codeschool {
+	--scheme: "Codeschool";
+	/* author: blockloop */
+	/* source: https://github.com/blockloop/base16-codeschool-scheme */
+	--pribg   : #232c31; /* base00 */
+	--secbg   : #1c3657; /* base01 */
+	--grey1   : #2a343a; /* base02 */
+	--grey2   : #3f4944; /* base03 */
+	--grey3   : #84898c; /* base04 */
+	--grey4   : #9ea7a6; /* base05 */
+	--prifg   : #a7cfa3; /* base06 */
+	--secfg   : #b5d8f6; /* base07 */
+	--red     : #b02f30; /* base08 */
+	--orange  : #c98344; /* base09 */
+	--yellow  : #c59820; /* base0A */
+	--green   : #a7cfa3; /* base0B */
+	--cyan    : #b5d8f6; /* base0C */
+	--blue    : #237986; /* base0D */
+	--pink    : #484d79; /* base0E */
+	--other   : #a03b1e; /* base0F */
+}
+.scheme-Dracula {
+	--scheme: "Dracula";
+	/* author: Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula) */
+	--pribg   : #282936; /* base00 */
+	--secbg   : #3a3c4e; /* base01 */
+	--grey1   : #4d4f68; /* base02 */
+	--grey2   : #626483; /* base03 */
+	--grey3   : #62d6e8; /* base04 */
+	--grey4   : #e9e9f4; /* base05 */
+	--prifg   : #f1f2f8; /* base06 */
+	--secfg   : #f7f7fb; /* base07 */
+	--red     : #ea51b2; /* base08 */
+	--orange  : #cfaa5b; /* base09 */
+	--yellow  : #ebff87; /* base0A */
+	--green   : #00f769; /* base0B */
+	--cyan    : #a1efe4; /* base0C */
+	--blue    : #62d6e8; /* base0D */
+	--pink    : #b45bcf; /* base0E */
+	--other   : #c4683e; /* base0F */
+}
+.scheme-OneDark {
+	--scheme: "OneDark";
+	/* author: Lalit Magant (http://github.com/tilal6991) */
+	/* source: https://github.com/LalitMaganti/base16-onedark-scheme */
+	--pribg   : #282c34; /* base00 */
+	--secbg   : #353b45; /* base01 */
+	--grey1   : #3e4451; /* base02 */
+	--grey2   : #545862; /* base03 */
+	--grey3   : #565c64; /* base04 */
+	--grey4   : #abb2bf; /* base05 */
+	--prifg   : #b6bdca; /* base06 */
+	--secfg   : #c8ccd4; /* base07 */
+	--red     : #e06c75; /* base08 */
+	--orange  : #d19a66; /* base09 */
+	--yellow  : #e5c07b; /* base0A */
+	--green   : #98c379; /* base0B */
+	--cyan    : #56b6c2; /* base0C */
+	--blue    : #61afef; /* base0D */
+	--pink    : #c678dd; /* base0E */
+	--other   : #be5046; /* base0F */
+}
+.scheme-OneLight {
+	--scheme: "One Light";
+	/* author: Daniel Pfeifer (http://github.com/purpleKarrot) */
+	/* source: https://github.com/purpleKarrot/base16-one-light-scheme */
+	--pribg   : #fafafa; /* base00 */
+	--secbg   : #f0f0f1; /* base01 */
+	--grey1   : #e5e5e6; /* base02 */
+	--grey2   : #a0a1a7; /* base03 */
+	--grey3   : #696c77; /* base04 */
+	--grey4   : #383a42; /* base05 */
+	--prifg   : #202227; /* base06 */
+	--secfg   : #090a0b; /* base07 */
+	--red     : #ca1243; /* base08 */
+	--orange  : #d75f00; /* base09 */
+	--yellow  : #c18401; /* base0A */
+	--green   : #50a14f; /* base0B */
+	--cyan    : #0184bc; /* base0C */
+	--blue    : #4078f2; /* base0D */
+	--pink    : #a626a4; /* base0E */
+	--other   : #986801; /* base0F */
+}
+.scheme-Monokai {
+	--scheme: "Monokai";
+	/* author: Lauren George */
+	/* source: https://codepen.io/lmgeorge/pen/xwNaqw */
+	--pribg   : #272822; /* base00 */
+	--secbg   : #383830; /* base01 */
+	--grey1   : #49483e; /* base02 */
+	--grey2   : #75715e; /* base03 */
+	--grey3   : #a59f85; /* base04 */
+	--grey4   : #f8f8f2; /* base05 */
+	--prifg   : #f5f4f1; /* base06 */
+	--secfg   : #f9f8f5; /* base07 */
+	--red     : #f92672; /* base08 */
+	--orange  : #fd971f; /* base09 */
+	--yellow  : #f4bf75; /* base0A */
+	--green   : #a6e22e; /* base0B */
+	--cyan    : #a1efe4; /* base0C */
+	--blue    : #66d9ef; /* base0D */
+	--pink    : #ae81ff; /* base0E */
+	--other   : #cc6633; /* base0F */
+}
+.scheme-Nord {
+	--scheme: Nord;
+	/* author: arcticicestudio */
+	/* source: https://github.com/ada-lovecraft/base16-nord-scheme */
+	--pribg:  #2E3440; /* base00 */
+	--secbg:  #3B4252; /* base01 */
+	--grey1:  #434C5E; /* base02 */
+	--grey2:  #4C566A; /* base03 */
+	--grey3:  #D8DEE9; /* base04 */
+	--grey4:  #E5E9F0; /* base05 */
+	--prifg:  #ECEFF4; /* base06 */
+	--secfg:  #8FBCBB; /* base07 */
+	--red:    #BF616A; /* base08 */
+	--orange: #D08770; /* base09 */
+	--yellow: #EBCB8B; /* base0A */
+	--green:  #A3BE8C; /* base0B */
+	--cyan:   #88C0D0; /* base0C */
+	--blue:   #81A1C1; /* base0D */
+	--pink:   #B48EAD; /* base0E */
+	--other:  #5E81AC; /* base0F */
+}
+.scheme-Test {
+	--scheme: "Dracula";
+	/* author: Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula) */
+	--pribg   : #282936; /* base00 */
+	--secbg   : #3a3c4e; /* base01 */
+	--grey1   : #4d4f68; /* base02 */
+	--grey2   : #626483; /* base03 */
+	--grey3   : #62d6e8; /* base04 */
+	--grey4   : #e9e9f4; /* base05 */
+	--prifg   : #f1f2f8; /* base06 */
+	--secfg   : #f7f7fb; /* base07 */
+	--red     : #ea51b2; /* base08 */
+	--orange  : #b45bcf; /* base09 */
+	--yellow  : #00f769; /* base0A */
+	--green   : #ebff87; /* base0B */
+	--cyan    : #a1efe4; /* base0C */
+	--blue    : #62d6e8; /* base0D */
+	--pink    : #b45bcf; /* base0E */
+	--other   : #00f769; /* base0F */
+	
+	
+	
+}
+.scheme-WoltLabTest {
+	--scheme: "WoltLab";
+	--pribg   : rgba(44, 62, 80, 1); /* base00 */
+	--secbg   : rgba(44, 62, 80, 1); /* base01 */
+	--grey1   : #4d4f68; /* base02 */
+	--grey2   : #626483; /* base03 */
+	--grey3   : #62d6e8; /* base04 */
+	--grey4   : #e9e9f4; /* base05 */
+	--prifg   : rgb(250, 250, 250); /* base06 */
+	--secfg   : rgba(236, 239, 241, 1); /* base07 */
+	--red     : #900; /* base08 */
+	--orange  : #f60; /* base09 */
+	--yellow  : #cc0; /* base0A */
+	--green   : #060; /* base0B */
+	--cyan    : #62d6e8; /* base0C */
+	--blue    : #036; /* base0D */
+	--pink    : #c09; /* base0E */
+	--other   : #90c; /* base0F */
+}
+
+
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}
+.scheme-xxxxxxxxxxx {
+}

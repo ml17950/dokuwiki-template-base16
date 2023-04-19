@@ -1,0 +1,24 @@
+/* changed: 22.01.31 */
+
+@media screen and (max-width: 480px) {
+	.footer-spacer {
+		background: var(--debug);
+	}
+
+	.page-header    { flex-direction: column-reverse; margin-top: 5px; }
+	.header-content { flex: 1; margin: 0 10% 0 0; }
+	.header-search  { flex: 1; margin-bottom: 10px; }
+	.header-search #dw__search { width: 96%; }
+	.header-search #qsearch__in:focus { width: 95%; }
+	.mid-content    { flex: 1; min-width: auto; min-height: auto; margin: 0 10px; }
+	.footer-spacer  { flex: 1; }
+	.footer-content { flex: 9; }
+	
+	.page-main {
+		flex-direction: column;
+	}
+
+	
+	.main-content h1:first-of-type { font-size: 2em; }
+	.main-content h1 { line-height: 1.0em; }
+}
