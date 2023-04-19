@@ -1,4 +1,4 @@
-/* changed: 22.01.31 */
+/* changed: 22.02.01 */
 
 @font face {
     font-family: SourceCodePro;
@@ -28,7 +28,7 @@ body {
 	--content-line-height : 1.5rem;
 
 	--border-color      : var(--grey3);
-	--border-radius     : 2;
+	--border-radius     : 2px;
 	
 	--button-background : var(--debug);
 	--button-text       : var(--debug);
@@ -38,9 +38,29 @@ body {
 	--button-padding    : 0;
 	--button-margin     : 0;
 }
+/***** links ******************************************************************/
 a:link    { color: var(--page-link-found); text-decoration: none; }
 a:visited { color: var(--page-link-found); text-decoration: none; }
 a:hover   { color: var(--page-link-found); text-decoration: underline; }
+
+/***** global *****************************************************************/
+input,
+select,
+textarea,
+button {
+	color: var(--prifg);
+	background: var(--secbg);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius);
+	padding: 3px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+	border: 1px solid var(--orange);
+}
 
 .body-wrapper {
 	

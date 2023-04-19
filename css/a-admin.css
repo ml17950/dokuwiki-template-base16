@@ -1,0 +1,93 @@
+/* changed: 22.02.01 */
+
+/***** admin login ************************************************************/
+#dw__login fieldset {
+	width: 340px;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+}
+#dw__login legend {
+	width: 100%;
+	color: #333;
+	font-size: 2em;
+	padding: 20px 0;
+}
+#dw__login label {
+	display: block;
+	text-align: left;
+	padding: 10px 20px 0 20px;
+	margin: 0;
+}
+#dw__login input[type="text"], #dw__login input[type="password"] {
+	display: block;
+	width: 90%;
+	font-size: 1.2em;
+	text-align: left;
+	color: var(--prifg);
+	background: var(--secbg);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius);
+	padding: 10px;
+	margin: 5px;
+}
+#dw__login button {
+	display: block;
+	color: white;
+	background: var(--blue);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius);
+	font-size: 1.5em;
+	padding: 10px 15px;
+	margin: 20px auto 10px auto;
+}
+
+/***** admin main page ********************************************************/
+.ui-admin { padding-bottom: 20px; }
+.admin_tasks { list-style: none; }
+.admin_tasks a { display: flex; align-items: end; }
+.admin_tasks .icon { flex: 0 0 30px; line-height: 24px; width: 24px; height: 24px; margin-top: 10px; fill: white; }
+.admin_tasks .prompt { flex: 1; font-size: 1.5em; line-height: 24px; height: 24px; padding-left: 10px; }
+#admin__version { color: var(--red); margin: 30px 30px 0 30px; }
+.admin_plugins { list-style: none; }
+.admin_plugins a { display: flex; align-items: end; }
+.admin_plugins .icon { flex: 0 0 30px; line-height: 24px; width: 24px; height: 24px; margin-top: 10px; fill: white; }
+.admin_plugins .prompt { flex: 1; font-size: 1.5em; line-height: 24px; height: 24px; padding-left: 10px; }
+
+/***** extension manager ******************************************************/
+#extension__manager ul.tabs { list-style: none; margin: 0; padding: 0; }
+#extension__manager ul.tabs li { display: inline-block; padding: 5px; margin: 0 5px; }
+#extension__manager ul.tabs li.active a { border: 1px solid var(--content-headlines); border-radius: var(--border-radius); background: none; padding: 3px 5px; }
+
+#extension__manager .panelHeader { background: none; }
+
+#extension__list ul.extensionList li { border-bottom: none; }
+.extensionList { list-style: none; margin: 0; padding: 0; }
+.extensionList li { display: flex !important; flex-wrap: nowrap; align-items: stretch; padding: 0 0 15px 0; margin: 0 0 20px 0; }
+.extensionList .enabled { border-left: 5px solid var(--green); }
+.extensionList .disabled { color: #111; border-left: 5px solid var(--red); }
+#extension__manager .legend { flex: 1; color: white; }
+#extension__manager .legend > div { border-right: none; }
+#extension__manager .legend .screenshot { padding: 5px; }
+#extension__manager .legend h2 { font-size: 1em; border: none; width: 98%; margin: 0; padding: 0 -20px 0 10px; }
+#extension__manager .legend p { padding: 0 0 0 20px; }
+#extension__manager .legend .author { font-size: 0.7em; }
+#extension__manager .legend .linkbar { padding: 0 0 0 20px; }
+#extension__manager .legend .info {}
+#extension__list .legend div.popularity { background: #333; height: 5px; }
+#extension__list .legend div.popularity div { background-color: var(--yellow); height: 5px; }
+#extension__manager .legend .popularity .a11y {
+    position: absolute !important;
+    left: -99999em !important;
+    top: auto !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+#extension__manager .actions { flex: 0 0 80px; margin-left: 10px; text-align: left; }
+#extension__manager .actions .version { color: #aaa; font-size: 0.7em; line-height: 1.1em; margin-top: 10px; }
+
+/***** admin login ************************************************************/
+/***** admin login ************************************************************/
+/***** admin login ************************************************************/
+/***** admin login ************************************************************/

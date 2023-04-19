@@ -1,0 +1,18 @@
+/* changed: 22.02.01 */
+
+/***** fastwiki edit form/page ************************************************/
+.content_partial { background-color: DeepPink; border: 1px solid SlateGray; padding: 5px; }
+
+/***** widearea Plugin ********************************************************/
+/***** https://www.dokuwiki.org/plugin:widearea *******************************/
+.widearea-overlayLayer.light {
+	background-color: #f8fafc !important;
+}
+.widearea-overlayLayer.dark {
+	background-color: #4D4F4F !important;
+}
+.widearea-overlayLayer #wiki__text {
+	max-width: 1050px !important;
+	font-family: "Courier New" !important;
+	font-size: 1.3em !important;
+}

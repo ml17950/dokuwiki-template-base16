@@ -1,4 +1,4 @@
-<?php	// changed: 22.01.31
+<?php	// changed: 22.02.01
 
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 
@@ -16,6 +16,7 @@ $showBreadcrumb = ($conf['breadcrumbs']==0) ? false : true;
 $hasSidebar		= page_findnearest($conf['sidebar']) && ($ACT=='show');
 $hasFooter		= page_findnearest($conf['footer']);
 $pageEditable	= ($INFO['editable']==1) ? true : false;
+$isLoggedId		= isset($INFO['userinfo']['name']);
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -129,7 +130,10 @@ if ($hasFooter) {
 	echo "footer-content · ";
 }
 echo tpl_pageinfo(true);
-echo " · <a href='?do=admin'>Admin</a>";
+if ($isLoggedId)
+	echo " · <a href='?do=admin'>Admin</a>";
+else
+	echo " · <a href='?do=login'>Login</a>";
 if ($pageEditable)
 	echo " · <a href='?do=edit'>Edit</a>";
 echo "</div>\n"; // .footer-content
@@ -141,6 +145,8 @@ echo "</div>\n"; // .page-footer
 // #############################################################################
 
 // echo "<pre>";
+// echo highlight_string(print_r($INFO, true));
+// echo highlight_string(print_r($conf, true));
 // echo highlight_string(print_r($_COOKIE, true));
 // echo highlight_string(print_r($_SESSION, true));
 // echo "</pre>";

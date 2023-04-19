@@ -1,7 +1,7 @@
 base     base16
 author   M. Lindner
 email    martin@andev.de
-date     2022-01-31
+date     2022-02-01
 name     Base16 (**NOTREADY**)
 desc     ToDo: desc
 url      https://www.dokuwiki.org/template:shell
