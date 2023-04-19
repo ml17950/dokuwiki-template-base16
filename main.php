@@ -1,4 +1,4 @@
-<?php	// changed: 22.02.20
+<?php	// changed: 2023-04-19
 
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 
@@ -13,11 +13,31 @@ $websiteTagline	= $conf['tagline'];
 $templateScheme = tpl_getConf('shell_scheme', 'monokai');
 $showYouAreHere = ($conf['youarehere']==0) ? false : true;
 $showBreadcrumb = ($conf['breadcrumbs']==0) ? false : true;
-$hasSidebar		= page_findnearest($conf['sidebar']) && ($ACT=='show');
-$hasFooter		= page_findnearest($conf['footer']);
-$pageEditable	= ($INFO['editable']==1) ? true : false;
+$hasSidebar		= isset($conf['sidebar']) && page_findnearest($conf['sidebar']) && ($ACT=='show');
+$hasFooter		= isset($conf['footer']) && page_findnearest($conf['footer']);
 $isLoggedId		= isset($INFO['userinfo']['name']);
+$pageExists		= ($INFO['exists']==1) ? true : false;
+$pageEditable	= ($INFO['editable']==1) ? true : false;
+$adminArea		= isset($_GET['do']) && (($_GET['do']=='admin') ? true : false);
+$editMode		= isset($_GET['do']) && (($_GET['do']=='edit') ? true : false);
 
+
+
+
+
+// $showSidebar	= $hasSidebar && ($ACT=='show');
+// $showTOC		= true;
+// $showTools		= !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && !empty($_SERVER['REMOTE_USER']) );
+
+
+// $showSidebar	= page_findnearest($conf['sidebar']) && ($ACT=='show');
+// get logo either out of the template images folder or data/media folder
+$logoSize		= array();
+$logo			= tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
+$websiteTitle	= strip_tags($conf['title']);
+$websiteTagline	= $conf['tagline'];
+$pageTitle		= tpl_pagetitle(null, true);
+$websiteHome	= wl();
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // DEV STUFF
@@ -90,9 +110,9 @@ echo "<div class='mid-content'>\n";
 		echo "<div class='main-navigation'>";
 			if ($showYouAreHere) {
 				if ($adminArea)
-					echo "<div class='main-youarehere'>",tpl_adminyouarehere(null, true),"</div>\n"; // .main-youarehere
+					echo "<div class='main-youarehere'>",tpl_adminyouarehere($ID, null, true),"</div>\n"; // .main-youarehere
 				else
-					echo "<div class='main-youarehere'>",stripped_tpl_youarehere(null, true),"</div>\n"; // .main-youarehere
+					echo "<div class='main-youarehere'>",tpl_stripped_youarehere(null, true),"</div>\n"; // .main-youarehere
 			}
 			if ($showBreadcrumb)
 				echo "<div class='main-breadcrumb'>",tpl_breadcrumbs(null, true),"</div>\n"; // .main-breadcrumb

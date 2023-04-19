@@ -12,6 +12,7 @@ body {
 	background: var(--pribg);
 	color: var(--prifg);
 	font-family: monospace;
+	/* font-family: SourceCodePro; */
 	/* font-family: "Consolas"; */
 	/* font-family: "Liberation Mono"; */
 	/* font-family: "Lucida Console"; */
