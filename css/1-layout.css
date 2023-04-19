@@ -1,4 +1,4 @@
-/* changed: 22.02.01 */
+/* changed: 22.02.20 */
 
 @font face {
     font-family: SourceCodePro;
@@ -125,7 +125,7 @@ button:focus {
 
 .page-main {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 }
 .mid-content {
@@ -134,8 +134,24 @@ button:focus {
 	min-height: 80vh;
 }
 .lspacer { flex: 1; text-align: left; }
+	.sidebar-left {
+		overflow: hidden;
+		width: 15px;
+		min-height: 75vh;
+		transition: all 250ms ease-in-out;
+		background: var(--secbg);
+		padding: 0;
+	}
+	.sidebar-left:hover {
+		width: 220px;
+		background-color: var(--pribg);
+		padding: 15px;
+	}
+		.sidebar-left h1 {
+			margin-left: 15px;
+		}
+
 .rspacer { flex: 1; text-align: right; }
-											.lspacer:hover { background: coral; }
 											.rspacer:hover { background: coral; }
 
 
@@ -156,6 +172,7 @@ button:focus {
 	.main-messages > .notify	{ background-color: var(--yellow); color: var(--pribg); }
 
 
+													/*
 													.sidebar-left {
 														flex: 0;
 														width: 5px;
@@ -167,6 +184,7 @@ button:focus {
 														background: coral;
 													}
 														.sidebar-right:hover { flex: 1 1 50px; }
+													*/
 
 
 .page-footer {

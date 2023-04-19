@@ -1,4 +1,4 @@
-/* changed: 22.01.31 */
+/* changed: 22.02.20 */
 
 @media screen and (max-width: 480px) {
 	.footer-spacer {
@@ -15,9 +15,25 @@
 	.footer-content { flex: 9; }
 	
 	.page-main {
-		flex-direction: column;
+		flex-flow: column nowrap;
 	}
-
+	.sidebar-left {
+		width: 100%;
+		min-height: auto;
+		height: 13px;
+		margin-bottom: 10px;
+	}
+	.sidebar-left:hover {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	/*
+	.lspacer { background: lime; }
+	.mid-content { background: coral; }
+	.rspacer { background: cyan; }
+	*/
 	
 	.main-content h1:first-of-type { font-size: 2em; }
 	.main-content h1 { line-height: 1.0em; }

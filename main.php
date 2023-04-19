@@ -1,4 +1,4 @@
-<?php	// changed: 22.02.01
+<?php	// changed: 22.02.20
 
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 
@@ -73,12 +73,14 @@ echo "</div>\n"; // .page-header
 echo "<div class='page-main'>\n";
 
 echo "<div class='lspacer'>\n";
-echo "lspacer";
-// echo "<div class='sidebar-left'>\n";
-// echo "left"; 
-// echo tpl_include_page($conf['sidebar'], false, true);
-// echo "</div>\n"; // .sidebar-left
+// echo "lspacer";
 
+if ($hasSidebar) {
+	echo "<div class='sidebar-left'>\n";
+// echo "left"; 
+	echo tpl_include_page($conf['sidebar'], false, true);
+	echo "</div>\n"; // .sidebar-left	
+}
 
 echo "</div>\n"; // .lspacer
 
